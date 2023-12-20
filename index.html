@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator project 1.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="http://www.veryicon.com/icon/png/System/Shadow135%20System/Calculator.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Web Calculator</h1>
+    </div>
+
+<div class="cont-div">
+    <form class="form-div">
+        <div class="in-form">
+            <div class="display-div" >
+                <input type="text" id="display"/>
+            </div>
+            <div class="btn-c">
+                <button onclick="cleardisplay()" type="button">
+                    AC
+                </button>
+            </div>
+            <div class="btn">
+                <button onclick="displayvalue(7)" type="button">7</button>
+                <button onclick="displayvalue(8)" type="button">8</button>
+                <button onclick="displayvalue(9)" type="button">9</button>
+                <button onclick="displayvalue('/')" type="button">/</button>
+            </div>
+            <div class="btn">
+                <button onclick="displayvalue(4)" type="button">4</button>
+                <button onclick="displayvalue(5)" type="button">5</button>
+                <button onclick="displayvalue(6)" type="button">6</button>
+                <button onclick="displayvalue('*')" type="button">*</button>
+            </div>
+            <div class="btn">
+                <button onclick="displayvalue(1)" type="button">1</button>
+                <button onclick="displayvalue(2)" type="button">2</button>
+                <button onclick="displayvalue(3)" type="button">3</button>
+                <button onclick="displayvalue('-')" type="button">-</button>
+            </div>
+            <div class="btn">
+                <button onclick="displayvalue('.')" type="button">.</button>
+                <button onclick="displayvalue(0)" type="button">0</button>
+                <button onclick="displayvalue('+')" type="button">+</button>
+                <button onclick="calculation()" type="button">=</button>
+            </div>
+        </div>
+    </form>  
+</div>    
+</body>
+<Script src="script.js"></Script>
+</html>
